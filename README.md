@@ -29,12 +29,13 @@ File input: it reads from "greetings.txt" to print a line upon the launch of the
 File output: it creates and writes to a filed called "records", storing in lines the winning records of the player from each round.
 
 5. Program codes in multiple files
-Our program has only one file.
+The codes are in multiple files.
 
 6. Proper indentation and naming styles
 The program has proper indentation and naming styles with meaningful variable names, which makes the codes easily intelligible. e.g. "matrix" represents the matrix generated, and "checkrow" in the function row_win means the number of guessed integer in the row under checking.
 
 7. In-code documentation
+It has proper in-code documentation.
 
 
 # Compilation and execution instructions.
