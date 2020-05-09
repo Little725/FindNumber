@@ -22,31 +22,31 @@ The games takes from the player an integer each round, based on which it generat
 The games uses struct Node.
 
 3. Dynamic memory management
-It stores all the correct integers in vector<int> numbers, all the distinct guessed integers in a linked linked from struct Node. When the player's guess is correct, the moveon function adds the integer into the linked list,; whereas when the player's guess is wrong, the moveback function takes away one most previous guessed correct integer from the linked list. The display function prints the matrix which the player currently has.
+It uses vector<int> numbers to store all the distinct integers in the matrix, and creates a linked list starting from head to store all the distinct guessed right integers. When the player's guess is correct, the moveon function adds the integer into the linked list,; whereas when the player's guess is wrong, the moveback function takes away one most previous guessed correct integer from the linked list. The display function prints the matrix which the player currently has.
 
 4. File input/output
 File input: it reads from "greetings.txt" to print a line upon the launch of the game, to welcome the player to the game.
-File output: it creates and writes to a filed called "records", storing in lines the winning records of the player from each round.
+File output: it creates and writes to a filed called "records", storing in lines the winning or leaving records of the player from each round.
 
 5. Program codes in multiple files
-The codes are in multiple files.
+There is one .cpp file containing the main code and five header files.
 
 6. Proper indentation and naming styles
-The program has proper indentation and naming styles with meaningful variable names, which makes the codes easily intelligible. e.g. "matrix" represents the matrix generated, and "checkrow" in the function row_win means the number of guessed integer in the row under checking.
+The program has proper indentation and naming styles with meaningful variable names, which makes the codes easily intelligible. e.g. "matrix" represents the matrix generated, and "checkrow" in the function "row_win()" means the number of right-guessed integer in the row under checking.
 
 7. In-code documentation
-It has proper in-code documentation.
+There are explanations under each meaningful step to demonstrate the intention and effect.
 
 
 # Compilation and execution instructions.
 
 Before starting, you will see on the screen a line of greetings ("Welcome to FindNumber!"), it is from a file named "greetings.txt".
-To start the game, input a integer (n) for the game to generate a n * n matrix with random integers 1~20 (including).
-Input another integer following the screen output. This is used to generate the random matrix.
-Now, you can start to guess which integers the matrix contains, and input one of your guesses.
+As instructed, to start the game, input an integer (n) for the game to generate a n * n matrix with random integers 1~20 (including).
+Input another integer following the instruction on the screen. This is used to generate the random matrix.
+Now, you can start to guess which integer the matrix contains, and input one of your guesses.
 If your guess is correct, a screen output of "You got a right answer!", and the partly revealed matrix will appear.The matrix only shows the correctly guessed integer(s), with other integers represented by an "*".
 If not, you will see "Sorry, you got a wrong answer." on screen, followed in the next few lines a matrix with the progress by your last guess (i.e. if the guess is wrong, the game takes one step back for you).
-After every guess, you can either enter "end" to quit the game, or start your next guess by entering another integer, with the same output patterns above, until you get all the integers correct.
-After having all the correct answers, the screen will say "Congratulations! You won in x steps.", where "x" is the steps you take to complete the matrix.
-After you win a game or leaving a game after some guess(es), you can see an output asking if you want to play this again, enter "yes" or "no" to play it again or quit the game.
-The playing record (winning / ending output) of each round will be stored to file "records.txt".
+After every guess, you can either enter "end" to quit the game, or start your next guess by entering another integer.
+After you complete a row, a column, or a diagonal, you win this set and the screen will say "Congratulations! You won in x steps.", where "x" is the steps you take to complete the matrix.
+After you win this set or choose to leave this set, you can see an output asking if you want to "play again" (it starts a new set for you), enter "yes" or "no" to play it again or quit the game.
+The playing record (winning / ending output) of each set will be stored to file "records.txt".
