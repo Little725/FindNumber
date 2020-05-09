@@ -11,7 +11,7 @@
 
 # Description
 
-# In this program, a n*n matrix consisting of n^2 integers will be initialized. The participant does not know the matrix at the beginning. The participant will determine the 'n' by typing an integer, and is required to guess the number in the matrix. Each time if they gets the number existing in the matrix, the number （may be one or more than one） will show up in the matrix. If they guesses a number not existing, their most previous right guess will be eliminated(i.e. the previous right number will disapprear in the matrix). After every guess, they can opt to end the game or continue with it. When they completes all numbers in a line (it can be a row, a column or a diagonal), they wins. Then they can choose to continue or exit. If they continue, another round will start from the beginning.
+# In this program, a n*n matrix consisting of n^2 integers will be initialized. The participant does not know the matrix at the beginning. The participant will determine the 'n' by typing an integer, and is required to guess the number in the matrix. Each time if the participant gets the number existing in the matrix, the number (along with existing right numbers) will show up in the matrix. If the participant guesses a number not existing, his most previous right guess will be eliminated(i.e. the previous right number will disapprear in the matrix). After every guess, they can opt to end the game or continue with it. When he completes all numbers in a line (it can be a row, a column or a diagonal), he wins. Then he can choose to continue or exit. If he continue, another round will start from the beginning.
 
 # Functions
 
