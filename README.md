@@ -11,7 +11,7 @@
 
 # Description
 
-# In this program, a n*n matrix consisting of n^2 integers will be initialized. The participant does not know the matrix at the beginning. The participant will determine the 'n' by typing an integer, and is required to guess the number in the matrix. Each time if the participant gets the number existing in the matrix, the number (along with existing right numbers) will show up in the matrix. If the participant guesses a number not existing, his most previous right guess will be eliminated(i.e. the previous right number will disapprear in the matrix). After every guess, they can opt to end the game or continue with it. When he completes all numbers in a line (it can be a row, a column or a diagonal), he wins. Then he can choose to continue or exit. If he continue, another round will start from the beginning.
+# In this program, a n*n matrix consisting of n^2 integers will be initialized. The participant does not know the matrix at the beginning. The participant will determine the 'n' by typing an integer, and is required to guess the number in the matrix. Each time if the participant gets the number existing in the matrix, the number (along with existing right numbers) will show up in the matrix. If the participant guesses a number not existing, his most previous right guess will be eliminated(i.e. the previous right number will disapprear in the matrix). After every guess, they can opt to end the game or continue with it. When he completes all numbers in a line (it can be a row, a column or a diagonal), he wins. Then he can choose to continue or exit. If he continue, another round will start from the beginning. Every time after the game, a game record is written to a .txt file.
 
 # Functions
 
@@ -49,4 +49,4 @@ If not, you will see "Sorry, you got a wrong answer." on screen, followed in the
 After every guess, you can either enter "end" to quit the game, or start your next guess by entering another integer, with the same output patterns above, until you get all the integers correct.
 After having all the correct answers, the screen will say "Congratulations! You won in x steps.", where "x" is the steps you take to complete the matrix.
 After you win a game or leaving a game after some guess(es), you can see an output asking if you want to play this again, enter "yes" or "no" to play it again or quit the game.
-The playing record (winning output) of each round will be stored to file "records.txt".
+The playing record (winning / ending output) of each round will be stored to file "records.txt".
