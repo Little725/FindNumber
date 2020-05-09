@@ -31,12 +31,6 @@ File output: it creates and writes to a filed called "records", storing in lines
 5. Program codes in multiple files
 There is one .cpp file containing the main code and five header files.
 
-6. Proper indentation and naming styles
-The program has proper indentation and naming styles with meaningful variable names, which makes the codes easily intelligible. e.g. "matrix" represents the matrix generated, and "checkrow" in the function "row_win()" means the number of right-guessed integer in the row under checking.
-
-7. In-code documentation
-There are explanations under each meaningful step to demonstrate the intention and effect.
-
 
 # Compilation and execution instructions.
 
