@@ -38,6 +38,17 @@ bool if_win (int** matrix, int n, Node * & head)
   // to check if any of the participants complete a line
 
 
+1. Generation of random game sets or events
+The games takes from the player an integer each round, based on which it generates a radom matrix containing integers from 1~20 (including).
+
+2. Data structures for storing game status
+The games uses struct Node.
+
+3. Dynamic memory management
+It stores all the correct integers in vector<int> numbers, all the distinct guessed integers in a linked linked from struct Node. When the player's guess is correct, the moveon function adds the integer into the linked list,; whereas when the player's guess is wrong, the moveback function takes away one most previous guessed correct integer from the linked list. The display function prints the matrix which the player currently has.
+
+
+
 # Compilation and execution instructions.
 
 
