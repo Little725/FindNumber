@@ -1,2 +1,2 @@
-project_group_84: project.cpp
-    g++ -o project_group_84 project_group_84.cpp
+project_group_84: project_group_84.cpp
+    g++ project_group_84 -o project_group_84.cpp
